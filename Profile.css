@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    background-color: #f1f1f1;
+    position: relative;
+}
+.leftPanel{
+    width: 18%;
+    height: 100vh;
+    background-color: pink;
+    position: fixed;
+    top: 0;
+}
+
+.logo{
+    width: 100%;
+    height: 15%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list{
+    height: 85%;
+    width: 100%;
+    background-color: blue;
+}
+.listItems{
+    width: 100%;
+    height:13%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+}
+.listItems:hover{
+    background-color: #555;
+}
+.listItems a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.12rem;
+    font-weight: 500;
+}
+.icon{
+    height: 100%;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.text
+{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.links{
+    height: 10%;
+    width: 100%;
+    background-color: #333;
+}
+.links ul,a, li{
+    padding-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    list-style-type: none;
+    font-weight: 300;
+    font-size: 0.85rem;
+}
+
+
+
+
+
+.rightPanel{
+    position: absolute;
+    right: 0;
+    width: 82%;
+    height: 100%;
+    background-color: green;
+}
+.navBar{
+    width: 100%;
+    height: 15%;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navBar input{
+    width: 700px;
+    height: 46px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.profile{
+    height: 70%;
+    width: 250px;
+    border: 2px solid black;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+.profileImg{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 1.88rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.profileUserName{
+    height: 60px;
+    width: 170px;
+    font-size: 1.22rem;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+a{
+    cursor: pointer;
+}
+
+.infoContainer{
+    height: 70vh;
+    width: 70vw;
+    margin: auto;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+}
+.infoImg{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+.userInfo{
+    height: 300px;
+    width: 450px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.userName{
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    font-size: 1.12rem;
+    text-transform: uppercase;
+    /* font-weight: 600; */
+    border: 2px solid red;
+}
+.userEmail{
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: 2px solid yellow;
+}

@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Registration.css">
 </head>
 <body>
-    <h1>Hello</h1>
+    
+    <div class="main-container">
+
+            <!-- Login page -->
+
+        <div class="login-page" id="login-page">
+            <h3>Login</h3>
+            
+                <input type="email" name="useremail" placeholder="Useremail" id="loginUserEmail">
+                <input type="password" name="password" placeholder="Password" id="loginPassword">
+                <button type="submit" id="loginBtn" onclick="signIn()">Login</button>
+                <p>Don't have an account? <a href="#" id="signup">Sign up</a></p>
+        </div>
+        
+        <!-- Signup page -->
+
+        <div class="signup-page hide" id="signup-page">
+            <h3>Signup</h3>
+            
+                <input type="text" name="username" placeholder="Username" id="signupUserName">
+                <input type="email" name="email" placeholder="Email" id="signupEmail">
+                <input type="password" name="password" placeholder="Password" id="signupPassword">
+                <button type="submit" id="signupBtn" onclick="signUp()">Signup</button>
+                <p>Already have an account? <a href="#" id="login">Login</a></p>
+        </div>
+
+    </div>
+
 </body>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="Registration.js"></script>
 </html>

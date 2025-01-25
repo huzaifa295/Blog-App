@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/abstract-digital-grid-black-background.jpg);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(9px);
+    background-color: #16404D;
+}
+.main-container{
+    height: 450px;
+    width: 450px;
+    border: 1px solid rgba(128, 128, 128, 0.664);
+    display: flex;
+    border-radius: 10px;
+    /* box-shadow: 0 0 30px white */
+}
+.login-page, .signup-page{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main-container h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+}
+.main-container input{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    /* border: none; */
+    /* border-bottom: 1px solid gray; */
+    padding-left: 10px;
+    margin-top: 20px;
+    background-color: transparent;
+}
+.main-container button{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    background-color: #16404D;
+    cursor: pointer;
+}
+.main-container button:hover{
+    background-color: #212121;
+}
+.main-container p{
+    font-size: 1.11rem;
+    font-weight: 400;
+    color: white;
+}
+.main-container a{
+    text-decoration: none;
+    color: blue;
+    font-weight: 400;
+}
+.hide{
+    display: none;
+}
